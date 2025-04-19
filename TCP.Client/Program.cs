@@ -1,8 +1,6 @@
-﻿using System;
-using System.Net.Sockets;
+﻿using System.Net.Sockets;
 using System.Text;
 using System.Text.Json;
-using System.Threading;
 
 class WeatherTcpClient
 {
@@ -16,7 +14,7 @@ class WeatherTcpClient
     while (true)
     {
       // Simulate weather data
-      object data = new()
+      object data = new
       {
         Temperature = random.Next(-10, 30),
         Rainfall = random.Next(0, 100)

@@ -1,5 +1,6 @@
 namespace TCP.Server;
 
+// The DTO we use to Deserialize the JSON data from the client
 public class WeatherData
 {
     public int Temperature { get; set; }
